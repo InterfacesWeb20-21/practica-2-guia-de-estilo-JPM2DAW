@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="Jquery/jquery-1.6.3.min.js"></script>
+    <title>Calzados DIW</title>
+    <script type="text/javascript">
+     function outlet () {
+        location.href="outlet.html";
+    }
+    $(function () {
+            $("#dividiomas").hide().fadeIn(500);
+            $("header").hide().fadeIn(2200);
+            $("nav").hide().fadeIn(2200);
+            $("h1").hide().fadeIn(2200);
+            $("#cajacontacto").hide().fadeIn(2200);
+            $("footer").hide().fadeIn(2200);
+        })
+        function idiomas () {
+            location.href="#";
+        }
+    </script>
+</head>
+<body>
+    <div id="dividiomas">
+        <p> Idioma: <select name="idiomas" id="idiomas" onchange="idiomas()"> <option value="es" selected=""> Castellano </option> <option value="en">  Inglés</option> </select> </p>
+    </div>
+    <header id="head1">
+        <header id="head2">
+                <a href="index.html">
+                    <h1> Calzados DIW </h1>
+                 </a>
+        </header>
+    </header>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn" disabled> Hombre </button>
+            <div class="dropdown-contenido">
+                <a href="hombre-casual.html"> Casual </a>
+                <a href="hombre-botas.html"> Botas </a>
+                <a href="hombre-castellanos.html"> Castellanos </a>
+                <a href="hombre-fiesta.html"> Fiesta </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" disabled> Mujer </button>
+            <div class="dropdown-contenido">
+                <a href="mujer-tacon.html"> Tacón </a>
+                <a href="mujer-plano.html"> Plano </a>
+                <a href="mujer-fiesta.html"> Fiesta </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" disabled> Niño </button>
+            <div class="dropdown-contenido">
+                <a href="niño-colegial.html"> Colegial </a>
+                <a href="niño-otros.html"> Otros </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="outlet()"> Outlet</button>
+        </div>
+    </nav>
+    <h1> CONTACTO </h1>
+    <div id="cajacontacto">
+        <ul>
+            <li> <b> Dirección: </b> C/Inventada, 12</li>
+            <li> <b> Teléfono: </b> 965263463 </li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.0401388080454!2d-0.502395284336015!3d38.371192885392745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6236eefaf9ecfb%3A0x1858170e032fbb23!2sCalle%20Cibeles%2C%204%2C%2003009%20Alicante%20(Alacant)%2C%20Alicante%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sfr!4v1601568565873!5m2!1ses!2sfr" width="300" height="180" frameborder="0" style="border:1px solid black;" allowfullscreen="no" aria-hidden="false" tabindex="0"></iframe>
+
+    </div>
+     <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Calzados<span>DIW</span></h3>
+    <br> <br>
+
+            <p class="footer-company-name">Calzados DIW © 2020</p>
+            <h3 id="copy"> &copy; Javier Pérez</h3>
+        </div>
+
+        <div class="footer-right">
+
+            <p>Contáctanos!</p>
+
+            <form action="#" method="post">
+
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Mensaje"></textarea>
+                <button>Enviar</button>
+
+            </form>
+
+        </div>
+    </footer>
+</body>
+</html>
